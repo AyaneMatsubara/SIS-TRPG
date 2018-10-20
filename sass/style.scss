@@ -37,8 +37,17 @@ header {
 .scroll {
 	position: fixed;
   bottom: 80px;
-  left: 30px;
+  left: 40px;
   height: 140px;
+}
+.sns-icons {
+	list-style: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 28px;
+  line-height: 1.8;
+  padding: 0;
 }
 
 .main {
@@ -85,11 +94,6 @@ header {
 	}
 }
 .sec {
-	&__inner {
-		padding: 100px 0;
-    margin: 0 auto;
-    width: 676px;
-	}
 	&__num {
 		color: $navy;
 		font-family: $point-font;
@@ -97,6 +101,9 @@ header {
 		font-size: 30px;
 		margin: 0;
     text-align: center;
+		&--gr {
+			color: $gray;
+		}
 	}
 	&__ttl {
 		color: $black;
@@ -106,6 +113,9 @@ header {
 		margin: 10px 0 80px;
 		text-align: center;
 		position: relative;
+		&--wh {
+			color: #fff;
+		}
 	}
 	&__ttl::before {
 		content: '';
@@ -118,6 +128,18 @@ header {
   	transform: translateX(-50%);
   	background-color: $black;
   	border-radius: 2px;
+	}
+	&__ttl--wh::before {
+		background-color: #fff;
+	}
+	&__inner {
+		padding: 100px 0;
+    margin: 0 auto;
+    width: 676px;
+	}
+	&__txt {
+		font-size: 18px;
+		line-height: 2;
 	}
 }
 .sec01 {
@@ -139,7 +161,87 @@ header {
 		padding: 60px 85px;
     margin: 0 auto;
 	}
+}
+.sec02 {
+	padding: 1000px 0 0;
+	img {
+		width: 100%;
+    margin: -30px 0 0;
+	}
+}
+.sec03 {
+	background-color: $navy;
+  margin: -30px 0 0;
+  padding-top: 30px;
+	&__txtarea {
+		max-width: 676px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+		color: #fff;
+		img {
+			width: 318px;
+    	height: 290px;
+		}
+	}
 	&__txt {
-		font-size: 18px;
+		width: 334px;
+	}
+	&__img {
+		font-size: 0;
+		img {
+			width: 100%;
+		}
+	}
+}
+.game-list {
+	list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+	align-items: flex-end;
+  margin: 0 auto 300px;
+  padding: 0;
+  max-width: 1050px;
+	position: relative;
+}
+.game-item {
+	font-size: 0;
+	width: 18vw;
+	img {
+		box-shadow: 10px 8px 10px $gray;
+		width: 100%;
+		transition: all ease-in-out 0.3s;
+	}
+	:hover {
+		opacity: 0.5;
+    transform: translateY(-12px);
+	}
+}
+.shelf {
+	height: 80px;
+  width: 100vw;
+  position: absolute;
+	bottom: -80px;
+  z-index: -10;
+  background-color: #EEEEEE;
+	border-bottom: 35px solid #fff;
+	box-shadow: 0 50px 50px $gray;
+}
+.sec05 {
+	background-color: $gray;
+}
+.window {
+	height: 40vh;
+	background-image: url(../images/main-back.png);
+	background-position: center;
+  background-attachment: fixed;
+	background-size: cover;
+}
+footer {
+	text-align: center;
+  height: 60px;
+	img {
+		width: 300px;
+    margin: 15px 0;
 	}
 }
