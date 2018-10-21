@@ -4,9 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/modaal.min.css">
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/jquery.textillate.js"></script>
+		<script src="js/modaal.min.js"></script>
+		<script src="js/main.js"></script>
 		
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@Neru_Neru_NERV" />
@@ -36,7 +42,8 @@
 			<div class="main__ttlarea">
 				<p class="main__sbttl">Nagoya Univ.</p>
 				<h1 class="main__ttl">SIS×TRPG</h1>
-				<p class="main__txt">school of information science<br>table-talk role playing game</p>
+				<p class="main__txt">school of information science</p>
+				<p class="main__txt">table-talk role playing game</p>
 			</div>
 		</section>
 		
@@ -80,20 +87,62 @@
 			</div>
 			<div class="games">
 				<ul class="game-list">
-					<li class="game-item"><img src="images/book01.png"></li>
-					<li class="game-item"><img src="images/book02.png"></li>
-					<li class="game-item"><img src="images/book03.png"></li>
-					<div class="shelf"></div>
+					<a href="#modal01" class="modal-a"><li class="game-item"><img src="images/book01.png"></li></a>
+					<a href="#modal02" class="modal-a"><li class="game-item"><img src="images/book02.png"></li></a>
+					<a href="#modal03" class="modal-a"><li class="game-item"><img src="images/book03.png"></li></a>
+					<div class="shelf" class="modal-a"></div>
 				</ul>
-				
 				<ul class="game-list">
-					<li class="game-item"><img src="images/game01.png"></li>
-					<li class="game-item"><img src="images/game02.png"></li>
-					<li class="game-item"><img src="images/game03.png"></li>
+					<a href="#modal04" class="modal-a"><li class="game-item"><img src="images/game01.png"></li></a>
+					<a href="#modal05" class="modal-a"><li class="game-item"><img src="images/game02.png"></li></a>
+					<a href="#modal06" class="modal-a"><li class="game-item"><img src="images/game03.png"></li></a>
 					<div class="shelf"></div>
 				</ul>
-				
 			</div>
+			
+			<div id="modal01" class="modal">
+				<img src="images/book01.png">
+				<div class="modal__txtarea">
+					<p class="modal__ttl">クトゥルフ神話TRPG</p>
+					<p class="modal__txt">サンプル</p>
+				</div>
+			</div>
+			<div id="modal02" class="modal">
+				<img src="images/book01.png">
+				<div class="modal__txtarea">
+					<p class="modal__ttl">クトゥルフ神話TRPG</p>
+					<p class="modal__txt">サンプル</p>
+				</div>
+			</div>
+			<div id="modal03" class="modal">
+				<img src="images/book01.png">
+				<div class="modal__txtarea">
+					<p class="modal__ttl">クトゥルフ神話TRPG</p>
+					<p class="modal__txt">サンプル</p>
+				</div>
+			</div>
+			<div id="modal04" class="modal">
+				<img src="images/book01.png">
+				<div class="modal__txtarea">
+					<p class="modal__ttl">クトゥルフ神話TRPG</p>
+					<p class="modal__txt">サンプル</p>
+				</div>
+			</div>
+			<div id="modal05" class="modal">
+				<img src="images/book01.png">
+				<div class="modal__txtarea">
+					<p class="modal__ttl">クトゥルフ神話TRPG</p>
+					<p class="modal__txt">サンプル</p>
+				</div>
+			</div>
+			<div id="modal06" class="modal">
+				<img src="images/book01.png">
+				<div class="modal__txtarea">
+					<p class="modal__ttl">クトゥルフ神話TRPG</p>
+					<p class="modal__txt">サンプル</p>
+				</div>
+			</div>
+			
 		</section>
 		<section class="sec05">
 			<div class="sec__inner">

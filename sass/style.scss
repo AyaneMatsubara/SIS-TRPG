@@ -9,6 +9,12 @@ $point-font: "Josefin Sans";
 body {
 	margin: 0;
 	font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+	animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
 header {
@@ -88,7 +94,7 @@ header {
   	margin: 30px 15px 15px;
 	}
 	&__txt {
-		font-size: 18px;
+		font-size: 20px;
 		margin: 0;
     line-height: 1.5;
 	}
@@ -194,6 +200,9 @@ header {
 		}
 	}
 }
+.sec04 {
+	overflow: hidden;
+}
 .game-list {
 	list-style: none;
   display: flex;
@@ -244,4 +253,23 @@ footer {
 		width: 300px;
     margin: 15px 0;
 	}
+}
+
+.modal {
+	display: none;
+	&__txtarea {
+		width: 320px;
+	}
+	&__ttl {
+		font-weight: bold;
+		font-size: 25px;
+	}
+	&__txt {
+		font-size: 18px;
+	}
+}
+.modaal-content-container {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
 }
