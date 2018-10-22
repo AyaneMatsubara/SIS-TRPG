@@ -33,12 +33,21 @@ header {
   width: 120px;
   top: 30px;
   left: 30px;
+	cursor: pointer;
+	transition: filter 0.3s;
+}
+.left-logo:hover {
+	filter: drop-shadow(0 0 5px gray);
 }
 .navbar {
 	position: fixed;
   width: 60px;
   top: 20px;
   right: 20px;
+	transition: filter 0.3s;
+}
+.navbar:hover {
+	filter: drop-shadow(0 0 5px gray);
 }
 .scroll {
 	position: fixed;
@@ -54,6 +63,10 @@ header {
   font-size: 28px;
   line-height: 1.8;
   padding: 0;
+	i:hover {
+		filter: drop-shadow(0 0 5px gray);
+		transition: filter 0.3s;
+	}
 }
 
 .main {
@@ -263,13 +276,22 @@ footer {
 	&__ttl {
 		font-weight: bold;
 		font-size: 25px;
+		border-bottom: 3px solid $navy;
 	}
 	&__txt {
 		font-size: 18px;
+		line-height: 2;
+	}
+	img {
+		height: max-content;
 	}
 }
 .modaal-content-container {
 	display: flex;
   flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
+}
+.modaal-container {
+	width: 75% !important;
 }

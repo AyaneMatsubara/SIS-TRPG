@@ -14,7 +14,13 @@ $(function(){
 		}
 	});
 	
-	$('.modal-a').modaal({
-		background_scroll: 'true'
+	$('.modal-a').modaal();
+	
+	$(function() {
+		let leftlogo = $(".left-logo");
+		leftlogo.click(function () {
+    	$('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+    		return false;
+  	});
 	});
 });
