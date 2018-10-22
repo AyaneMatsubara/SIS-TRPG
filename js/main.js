@@ -16,6 +16,11 @@ $(function(){
 	
 	$('.modal-a').modaal();
 	
+	/*$('.form__submit').click(function() {
+		$(".form").submit();
+		return false; 
+	}*/
+	
 	$(function() {
 		let leftlogo = $(".left-logo");
 		leftlogo.click(function () {
@@ -23,4 +28,24 @@ $(function(){
     		return false;
   	});
 	});
+	
+	var appear = true;
+  var scroll_ = $('#scroll_');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 4500) {
+      if (appear) {
+        appear = false;
+        scroll_.stop().animate({
+          'left': '-40px'
+        }, 300);
+      }
+    } else {
+      if (appear == false) {
+        appear = true;
+        scroll_.stop().animate({
+         	'left': '40px'
+        }, 300);
+      }
+    }
+  });
 });
