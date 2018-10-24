@@ -1,4 +1,3 @@
-// JavaScript Document
 $(function(){
 	$(".main__ttl").textillate({
 		in: {

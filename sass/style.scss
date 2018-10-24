@@ -1,9 +1,6 @@
-/* CSS Document */
-
 $navy: #436F8A;
 $gray: #CCCCCC;
 $black: #1B1B1B;
-
 $point-font: "Josefin Sans";
 
 body {
@@ -102,6 +99,7 @@ header {
 	background-image: url(../images/main-back.png);
 	background-repeat: no-repeat;
   background-size: cover;
+	background-position: center;
 	width: 83%;
   max-width: 1300px;
   margin: 0px auto;
@@ -377,4 +375,95 @@ footer {
 .form__submit:active {
 	border-bottom: none;
 	transform: translateY(5px);
+}
+.sp {
+	display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+	.pc {
+		display: none;
+	}
+	.sp {
+		display: block;
+	}
+	.left-logo {
+		width: 100px;
+    left: 20px;
+	}
+	.main {
+		width: 100%;
+		margin: 0;
+		padding: 70px 0;
+	}
+	.main__ttlarea {
+		width: 300px;
+    padding: 80px 10px;
+	}
+	.main__sbttl {
+		font-size: 18px;
+	}
+	.main__ttl {
+		font-size: 40px;
+	}
+	.main__sbttl::after, .main__sbttl::before {
+		width: 50px;
+	}
+	.sec__inner {
+		padding: 20px;
+	}
+	.sec__num {
+		font-size: 24px;
+	}
+	.sec__ttl {
+		margin: 10px 0 50px;
+		font-size: 28px;
+	}
+	.sec__txt {
+		font-size: 15px;
+	}
+	.sec01 {
+		padding: 120px 0 80px;
+	}
+	.sec01__img {
+		width: 100%;
+	}
+	.sec01__txtarea {
+		padding: 50px 20px;
+	}
+	.sec02 {
+		padding: 710px 0 0;
+		img {
+			margin: 20px 0;
+		}
+	}
+	.sec03__txtarea {
+		img {
+			width: 90%;
+    	height: 90%;
+    	margin: 30px auto;
+		}
+	}
+	.form {
+		line-height: 1.5;
+    margin: 30px auto;
+		input {
+			margin: 0;
+    	width: 200px;
+		}
+	}
+	.form__item {
+		font-size: 15px;
+    padding: 20px 0;
+	}
+	.form__required {
+		font-size: 12px;
+    margin: 0;
+		padding: 5px;
+	}
+	.form__submit {
+		width: 250px;
+    margin: 0 auto 30px;
+	}
 }
