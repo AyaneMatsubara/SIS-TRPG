@@ -27,7 +27,7 @@
 		<header>
 			<img class="center-logo" src="images/dice.svg">
 			<img class="left-logo" src="images/logo--header.png">
-			<img class="navbar" src="images/navbar.png">
+			<img class="navbar" id="navbar" src="images/navbar.png">
 		</header>
 		
 		<img class="scroll" id="scroll_" src="images/scroll.png">
@@ -47,8 +47,17 @@
 			</div>
 		</section>
 		
+		<div class="menu">
+			<p class="menu__item"><a href="#sec01">ABOUT US</a></p>
+			<p class="menu__item"><a href="#sec02">WHAT IS "SIS" ?</a></p>
+			<p class="menu__item"><a href="#sec03">WHAT IS "TRPG" ?</a></p>
+			<p class="menu__item"><a href="#sec04">RECOMMENDED GAMES</a></p>
+			<p class="menu__item"><a href="#sec05">CONTACT</a></p><br>
+			<p class="menu__item" id="close"><a>close menu</a></p>
+		</div>
+		
 		<section class="sec01">
-			<div class="sec01__img">
+			<div class="sec01__img" id="sec01">
 				<div class="sec__inner">
 					<div class="sec01__txtarea">
 						<p class="sec__num">01</p>
@@ -59,14 +68,14 @@
 			</div>
 		</section>
 		<section class="sec02">
-			<div class="sec__inner">
+			<div class="sec__inner"  id="sec02">
 				<p class="sec__num">02</p>
 				<h2 class="sec__ttl">WHAT IS "SIS" ?</h2>
 				<p class="sec__txt">SISとは ”School of Information Science”＝情報学部という意味です。<br>名古屋大学情報学部は2017年に新しく生まれた学部で、人間・社会情報学科、自然情報学科、コンピューター科学科で構成されています。<br>プログラミングやシステム数学、社会学、論理学などを学びます。</p>
 			</div>
 			<img src="images/sis-img.png">
 		</section>
-		<section class="sec03">
+		<section class="sec03" id="sec03">
 			<div class="sec__inner">
 				<p class="sec__num sec__num--gr">03</p>
 				<h2 class="sec__ttl sec__ttl--wh">WHAT IS "TRPG" ?</h2>
@@ -79,7 +88,7 @@
 				<img src="images/katan.png">
 			</div>
 		</section>
-		<section class="sec04">
+		<section class="sec04" id="sec04">
 			<div class="sec__inner">
 				<p class="sec__num">04</p>
 				<h2 class="sec__ttl">RECOMMENDED GAMES</h2>
@@ -87,15 +96,15 @@
 			</div>
 			<div class="games">
 				<ul class="game-list">
-					<a href="#modal01" class="modal-a"><li class="game-item"><img src="images/book01.png"></li></a>
-					<a href="#modal02" class="modal-a"><li class="game-item"><img src="images/book02.png"></li></a>
-					<a href="#modal03" class="modal-a"><li class="game-item"><img src="images/book03.png"></li></a>
-					<div class="shelf" class="modal-a"></div>
+					<li class="game-item"><a href="#modal01" class="modal-a"><img src="images/book01.png"></a></li>
+					<li class="game-item"><a href="#modal02" class="modal-a"><img src="images/book02.png"></a></li>
+					<li class="game-item"><a href="#modal03" class="modal-a"><img src="images/book03.png"></a></li>
+					<div class="shelf"></div>
 				</ul>
 				<ul class="game-list">
-					<a href="#modal04" class="modal-a"><li class="game-item"><img src="images/game01.png"></li></a>
-					<a href="#modal05" class="modal-a"><li class="game-item"><img src="images/game02.png"></li></a>
-					<a href="#modal06" class="modal-a"><li class="game-item"><img src="images/game03.png"></li></a>
+					<li class="game-item"><a href="#modal04" class="modal-a"><img src="images/game01.png"></a></li>
+					<li class="game-item"><a href="#modal05" class="modal-a"><img src="images/game02.png"></a></li>
+					<li class="game-item"><a href="#modal06" class="modal-a"><img src="images/game03.png"></a></li>
 					<div class="shelf"></div>
 				</ul>
 			</div>
@@ -144,7 +153,7 @@
 			</div>
 			
 		</section>
-		<section class="sec05">
+		<section class="sec05" id="sec05">
 			<div class="sec__inner">
 				<p class="sec__num">05</p>
 				<h2 class="sec__ttl">CONTACT</h2>

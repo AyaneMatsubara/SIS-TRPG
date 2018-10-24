@@ -20,6 +20,7 @@ body {
 header {
 	height: 100px;
 	position: relative;
+	z-index: 10;
 }
 .center-logo {
 	position: fixed;
@@ -45,6 +46,7 @@ header {
   top: 20px;
   right: 20px;
 	transition: filter 0.3s;
+	cursor: pointer;
 }
 .navbar:hover {
 	filter: drop-shadow(0 0 5px gray);
@@ -63,9 +65,36 @@ header {
   font-size: 28px;
   line-height: 1.8;
   padding: 0;
+	z-index: 10;
 	i:hover {
 		filter: drop-shadow(0 0 5px gray);
 		transition: filter 0.3s;
+	}
+}
+.menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 300px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	transition: all 0.2s;
+  transform: translate(300px);
+	z-index: 10;
+	&__item {
+		color: #fff;
+		font-size: 18px;
+		margin: 30px;
+		a {
+			text-decoration: none;
+    	color: #fff;
+			font-family: $point-font;
+			border-bottom: 2px solid $navy;
+			cursor: pointer;
+		}
+	}
+	&__active {
+		transform: translate(0); 
 	}
 }
 
@@ -154,12 +183,13 @@ header {
 	&__inner {
 		padding: 100px 0;
     margin: 0 auto;
-    width: 676px;
+    max-width: 676px;
 	}
 	&__txt {
 		font-size: 18px;
 		line-height: 2;
 		text-align: left;
+		margin: 0 auto;
 	}
 }
 .sec01 {
@@ -202,6 +232,7 @@ header {
 		img {
 			width: 318px;
     	height: 290px;
+			margin: 0 auto;
 		}
 	}
 	&__txt {
@@ -236,7 +267,7 @@ header {
 		transition: all ease-in-out 0.3s;
 	}
 	:hover {
-		opacity: 0.5;
+		opacity: 0.7;
     transform: translateY(-12px);
 	}
 }
@@ -293,6 +324,9 @@ footer {
   flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+}
+.modaal-inner-wrapper {
+	padding: 80px 0 !important;
 }
 .modaal-container {
 	width: 75% !important;

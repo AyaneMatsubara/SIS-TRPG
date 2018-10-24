@@ -16,15 +16,31 @@ $(function(){
 	
 	$('.modal-a').modaal();
 	
-	/*$('.form__submit').click(function() {
-		$(".form").submit();
-		return false; 
-	}*/
+	$('#navbar').click(function() {
+		$('.menu').addClass('menu__active');
+	})
+	$('#close').click(function() {
+		$('.menu').removeClass('menu__active');
+	})
+	$('.menu__item').click(function() {
+		$('.menu').removeClass('menu__active');
+	})
+	
+	$(function() {
+		$(".fa-twitter").click(function() {
+			window.location.href = "http://twitter.com/?status="+encodeURIComponent(document.title+" "+location.href);
+		})
+	});
 	
 	$(function() {
 		let leftlogo = $(".left-logo");
 		leftlogo.click(function () {
-    	$('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+    	$('body, html').animate({ scrollTop: 0 }, 500);
+    		return false;
+  	});
+		let footer = $("footer");
+		footer.click(function () {
+    	$('body, html').animate({ scrollTop: 0 }, 500);
     		return false;
   	});
 	});
