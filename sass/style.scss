@@ -374,7 +374,7 @@ footer {
 }
 .form__submit:active {
 	border-bottom: none;
-	transform: translateY(5px);
+	border-top: 5px solid $gray;
 }
 .sp {
 	display: none;
@@ -398,7 +398,7 @@ footer {
 		padding: 70px 0;
 	}
 	.main__ttlarea {
-		width: 300px;
+		width: 294px;
     padding: 80px 10px;
 	}
 	.main__sbttl {
@@ -411,7 +411,7 @@ footer {
 		width: 50px;
 	}
 	.sec__inner {
-		padding: 20px;
+		padding: 50px 20px 20px;
 	}
 	.sec__num {
 		font-size: 24px;
@@ -433,9 +433,9 @@ footer {
 		padding: 50px 20px;
 	}
 	.sec02 {
-		padding: 710px 0 0;
+		padding: 620px 0 0;
 		img {
-			margin: 20px 0;
+			margin-top: 20px;
 		}
 	}
 	.sec03__txtarea {
@@ -465,5 +465,25 @@ footer {
 	.form__submit {
 		width: 250px;
     margin: 0 auto 30px;
+	}
+	.game-list {
+		margin: 30px auto 120px;
+	}
+	.game-item {
+		width: 30vw;
+	}
+	.shelf {
+		border-bottom: 25px solid #fff;
+    height: 60px;
+    bottom: -50px;
+	}
+	.modaal-wrapper img {
+		width: 150px;
+	}
+	.modal__ttl {
+		font-size: 20px;
+	}
+	.modal__txt {
+		font-size: 15px;
 	}
 }
