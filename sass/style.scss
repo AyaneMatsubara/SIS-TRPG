@@ -5,15 +5,14 @@ $point-font: "Josefin Sans";
 
 body {
 	margin: 0;
+	position: relative;
 	font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
 	animation: fadeIn 2s ease 0s 1 normal;
 }
-
 @keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
 }
-
 header {
 	height: 100px;
 	position: relative;
@@ -77,7 +76,7 @@ header {
 	background-color: rgba(0,0,0,0.8);
 	transition: all 0.2s;
   transform: translate(300px);
-	z-index: 10;
+	z-index: 100;
 	&__item {
 		color: #fff;
 		font-size: 18px;
@@ -89,9 +88,20 @@ header {
 			border-bottom: 2px solid $navy;
 			cursor: pointer;
 		}
+		a:hover {
+			color: $gray;
+		}
 	}
 	&__active {
 		transform: translate(0); 
+	}
+	&__cover {
+		position: absolute;
+		visibility: hidden;
+		height: 100%;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(250,250,250,0.7);
 	}
 }
 
